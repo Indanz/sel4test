@@ -13,6 +13,9 @@
 #include "../helpers.h"
 
 #ifndef MIN_BUDGET_US
+#ifdef CONFIG_PLAT_TK1
+#define MIN_BUDGET_US (2 * 100)
+#else
 #define MIN_BUDGET_US (2 * 10)
 #endif
 
